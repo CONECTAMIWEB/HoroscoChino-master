@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity
             {R.drawable.chino_01, R.drawable.chino_02, R.drawable.chino_03, R.drawable.chino_04, R.drawable.chino_05, R.drawable.chino_06, R.drawable.chino_07, R.drawable.chino_08, R.drawable.chino_09, R.drawable.chino_10, R.drawable.chino_11, R.drawable.chino_12,};
 
 
-
     //Variable de tipo button que va a contener el boton generar Meses de nuestra aplicación y el boton de compartir en redes sociales
     private Button btnGenerar, btnCompartir;
 
@@ -45,12 +44,9 @@ public class MainActivity extends AppCompatActivity
     private String mesFinal;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -74,8 +70,6 @@ public class MainActivity extends AppCompatActivity
         View btnGenerar = findViewById(R.id.btnGenerar);
 
 
-
-
         //Añado un  listener (escuchador) al boton, para poder capturar LAS IMAGENES y LOS TEXTOS
         btnGenerar.setOnClickListener(new View.OnClickListener()
         {
@@ -90,12 +84,9 @@ public class MainActivity extends AppCompatActivity
 
                 //Lanzo el método Cogerfrases para que empiece a buscar en el archivo Json
                 CogerMeses();
-
             }
 
         });
-
-
 
         //Añado un listener (escuchador) al boton, para poder capturar cada vez que se pulsa
         btnCompartir.setOnClickListener(new View.OnClickListener()
@@ -103,8 +94,6 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onClick(View v) {
-
-
 
 
                 //Añado esta comprobacion para evitar que la aplicacion se cierre por un crash, puesto que puede darse
@@ -137,15 +126,10 @@ public class MainActivity extends AppCompatActivity
 
                 }
 
-
-
             }
         });
 
-
-
     }
-
 
     private void CogerMeses()
     {
@@ -177,7 +161,6 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         }
 
-
         //Si llegamos aqui a salvos es que lo anterior ha ido correctamente xD, ahora vamos a sacar un frase aleatoria de la lista
 
         //Generamos una instancia de Random, random la usaremos siempre que queramos generar algo aleatorio
@@ -192,10 +175,7 @@ public class MainActivity extends AppCompatActivity
         //Aplicamos el resultado a texto de la vista de nuestra interfaz para mostrarlo por pantalla
         txtMes.setText(mesFinal);
 
-
-
     }
-
 
     //Función que lee el contenido del Json y nos devuelve un string con su texto
     public String loadJSONFromAsset() {
@@ -227,13 +207,6 @@ public class MainActivity extends AppCompatActivity
         if(onlyOnwhatsApp)
             sendIntent.setPackage("com.whatsapp");
 
-
-
         startActivity(Intent.createChooser(sendIntent,"Compartir mes Generado"));
-
-
     }
-
-
 }
-
