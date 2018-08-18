@@ -1,59 +1,40 @@
 {
-
-  "meses":
-  [
-
+  "meses": [
     {
-
-      "texto":"¿Cuál es tu placer prohibido?"
-
+      "texto": "Enero"
     },
     {
-
-      "texto":"¿Qué es lo más extraño que has buscado en internet?"
-
+      "texto": "Febrero"
     },
     {
-
-      "texto":"¿Cuál es la cosa más infantil que todavía haces?"
-
+      "texto": "Marzo"
     },
     {
-      "texto":"¿Qué no has contado nunca a nadie?"
-
+      "texto": "Abril"
     },
     {
-      "texto":"Mayo"
-
+      "texto": "Mayo"
     },
     {
-      "texto":"Junio"
-
+      "texto": "Junio"
     },
     {
-      "texto":"Julio"
-
+      "texto": "Julio"
     },
     {
-      "texto":"Agosto"
-
+      "texto": "Agosto"
     },
     {
-      "texto":"Septiembre"
-
+      "texto": "Septiembre"
     },
     {
-      "texto":"Octubre"
-
+      "texto": "Octubre"
     },
     {
-      "texto":"Noviembre"
-
+      "texto": "Noviembre"
     },
     {
-      "texto":"Diciembre"
-
+      "texto": "Diciembre"
     }
-
   ]
 }
